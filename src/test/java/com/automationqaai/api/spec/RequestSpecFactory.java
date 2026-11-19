@@ -5,14 +5,14 @@ import io.restassured.specification.RequestSpecification;
 
 public class RequestSpecFactory {
 
-    public RequestSpecification createRequestSpec(String baseUrl) {
+  public RequestSpecification createRequestSpec(String baseUrl) {
 
-        RequestSpecBuilder requestBuilder = new RequestSpecBuilder();
+    RequestSpecBuilder requestBuilder = new RequestSpecBuilder();
 
-        requestBuilder.setBaseUri(baseUrl);
-        requestBuilder.setAccept("application/json");
-        requestBuilder.setContentType("application/json");
+    requestBuilder.setBaseUri(baseUrl);
+    requestBuilder.setAccept("application/json");
+    requestBuilder.setContentType("application/json");
 
-        return requestBuilder.build();
-    }
+    return requestBuilder.build();
+  }
 }
